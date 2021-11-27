@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Hacker's interface</title>
+</head>
+<body>
+    <div class="wrapper">
+        <a class="register" href="register">
+            <img alt="register" class="sign-in-icon" src="./bin/src/register.svg">
+            <span class="sign-in">Register</span>
+        </a>
+        <a class="upload" href="upload">
+            <img alt="upload" class="upload-icon" src="./bin/src/upload.svg">
+            <span class="upload-c">File Cloud</span>
+        </a>
+        <p class="title">Email interface</p>
+        <p class="title title-reversed">Email interface</p>
+        <div class="input-container">            
+            <label for="uuid">Your UUID</label>
+            <input type="text" class="uuid_input" id="uuid" placeholder="Unique user id">
+        </div>
+        <div class="input-container">            
+            <label for="email">Receiver email</label>
+            <input type="text" class="email_input" id="email" placeholder="Receiver email">
+        </div>
+        <div class="input-container">            
+            <label for="title">Email title</label>
+            <input type="text" class="title_input" id="title" placeholder="Email title">
+        </div>
+        <div class="input-container">            
+            <label for="html">Email html</label>
+            <textarea type="text" class="html_input" id="html" placeholder="&#60;h1&#62;This is a test.&#60;/h1&#62;"></textarea>
+        </div>
+        <p id="timeout"></p>
+        <button class="send_button">Send mail</button>
+    </div>
+    <script src="./bin/lib/devNow_7.js" type="text/javascript"></script>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>

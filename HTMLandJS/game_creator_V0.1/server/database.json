@@ -1,0 +1,308 @@
+{
+  "map": {
+    "player": {
+      "x": 100,
+      "y": 100,
+      "height": 50,
+      "width": 50,
+      "color": [
+        205,
+        0,
+        55
+      ],
+      "options": {}
+    },
+    "type": [
+      "rectangle",
+      "rectangle",
+      "rectangle",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball",
+      "ball"
+    ],
+    "x": [
+      537,
+      589,
+      548,
+      551,
+      551,
+      551,
+      551,
+      551,
+      549,
+      547,
+      547,
+      547,
+      547,
+      542,
+      549,
+      560,
+      560,
+      560,
+      560,
+      560,
+      560
+    ],
+    "y": [
+      733,
+      731,
+      339,
+      261,
+      261,
+      261,
+      261,
+      261,
+      261,
+      262,
+      262,
+      262,
+      262,
+      267,
+      702,
+      697,
+      697,
+      697,
+      697,
+      697,
+      697
+    ],
+    "r": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "width": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "height": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "color": [
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ],
+      [
+        255
+      ]
+    ],
+    "options": [
+      {
+        "restitution": 0,
+        "density": 1,
+        "isStatic": true
+      },
+      {
+        "restitution": 0,
+        "density": 1,
+        "isStatic": true
+      },
+      {
+        "restitution": 0,
+        "density": 1,
+        "isStatic": true
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      },
+      {
+        "restitution": 1,
+        "isStatic": false
+      }
+    ]
+  }
+}

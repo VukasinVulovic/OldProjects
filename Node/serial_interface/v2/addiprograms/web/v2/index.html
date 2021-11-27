@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="page_style.css">
+    <title>V2</title>
+  </head>
+  <body>
+    <button onclick="serial('write', 'random', 3000)" class="send_btn">WRITE</button>
+    <button onclick="console.log(serial('random', '', 3000))" class="send_btn">READ</button>
+    <button onclick="console.log(random(3000))" class="send_btn">RANDOM</button>
+    <script src="bin/libraries/jQuery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

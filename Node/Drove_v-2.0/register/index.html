@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Register</title>
+</head>
+<body>
+    <span class="title">
+        Register a new account
+    </span>
+    <div class="wrapper">   
+        <form action="/register-user">
+            <div class="input-box">
+                <i class="fa fa-envelope-o icon"></i>
+                <input type="email" name="email" placeholder="Your email">
+            </div>
+            <div class="input-box">
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="username" placeholder="Username you want to use">
+            </div>
+            <div class="input-box">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" name="password" placeholder="Password you want to use">
+            </div>
+            <div class="input-box">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" name="password-repeat" placeholder="Repeat the password">
+            </div>
+            <br>
+            <button type="submit" class="submit-button">Register</button>
+            <a href="/login">
+                <button type="button" class="log-in-button">Already an user</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

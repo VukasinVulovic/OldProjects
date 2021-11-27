@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <a class="count">0 properies made</a>
+        <label for="image">Image:</label>
+        <input type="file" id="image">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+
+        <label for="price">Price:</label>
+        <select id="price">
+            <option>60</option>
+            <option>100</option>
+            <option>200</option>
+            <option>400</option>
+            <option>600</option>
+            <option>700</option>
+            <option>850</option>
+            <option>1080</option>
+            <option>3000</option>
+        </select>
+
+        <label for="fee">Fee:</label>
+        <select id="fee">
+            <option>80</option>
+            <option>100</option>
+            <option>200</option>
+            <option>230</option>
+        </select>
+
+        <label for="build">Build price:</label>
+        <select id="build">
+            <option>200</option>
+            <option>400</option>
+            <option>500</option>
+            <option>700</option>
+        </select>
+
+        <button class="generate-button">GENERATE</button>
+        <div class="map-code"></div>
+    </div>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ffmpeg -y -rtbufsize 100M -f gdigrab -framerate 15 -probesize 10M -draw_mouse 1 -i desktop -c:v libx264 -r 30 -preset ultrafast -tune zerolatency -crf 25 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live.sdp?tcp

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+      <title>Document</title>
+      <style>
+         * {
+            font-family: 'Open Sans';
+         }
+         
+         .info {
+            font-size: 18pt; 
+            text-align: left; 
+            color: black;
+         }
+
+         .logo {
+            width: 200px; 
+            height: 200px; 
+            margin: auto; 
+            display: block;
+         }
+
+         .code {
+            width: 150px;
+            height: 150px;
+         }
+
+         .link-version, link {
+            font-size: 12pt;
+         }
+         
+      </style>
+   </head>
+   <body>
+      <img class="logo" src="https://i.imgur.com/rDaC9af.png" style="display:block" width="200" height="200"> 
+      <img class="code" src="https://qrcode.tec-it.com/API/QRCode?data=${url}" alt="qr-code">
+      <p class="info"> Hello fellow email user, <br>&nbsp;&nbsp;we have recently received an access request for your drove account. <br>&nbsp;&nbsp;If you didn't request acess, please don't comfirm the login! <br>&nbsp;&nbsp;If you wanted acess to this drove account on a phone, scan this butiful QR code.<br></p>
+      <span class="link-version">If you don't want to use the QR code, or want to sing in this device, use this link: </span><a class="link" href="${url}">${url}</a> 
+   </body>
+</html>

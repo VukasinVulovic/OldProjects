@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+:root {
+    --logo-width: 70px;
+    --logo-height: 35px;
+    --nav-height: 45px;
+    --nav-font-size: 18px;
+    /* --services-width: 70%;
+    --services-height: 650px; */
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: url(/assets/images/background.png) center center fixed;
+    background-size: cover;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav {
+    width: 100%;
+    height: var(--nav-height);
+    left: 0;
+    top: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; 
+    position: sticky;
+    background: linear-gradient(to right,#023b69, #021a69);
+    text-align: center;
+    z-index: 1;
+}
+
+.top-nav a {
+    color: black;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+}
+
+.top-nav .logo {
+    left: 5px;
+    top: 5px;
+    width: var(--logo-width);
+    height: var(--logo-height);
+    position: absolute;
+}
+
+.top-nav .logo:hover {
+    opacity: 0.8;
+}
+
+.top-nav .nav-item {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: var(--nav-font-size);
+    padding-top: 10px;
+    padding-top: calc(var(--nav-height)/2 - var(--nav-font-size/2));    
+    display: inline-block;
+}
+
+.top-nav .launguage {
+    right: -2px;
+    top: 12px;
+    width: 70px;
+    height: calc(var(--nav-height) - 24px);
+    position: absolute;
+}
+
+.product-slideshow {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: calc(var(--nav-height) * 2);
+    width: 80%;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.253);
+    background: url(assets/images/products/network/switch_optical_1.jpg);
+    background-size: cover;
+    animation-delay: 2s;
+    /* opacity: 1; */
+}
+
+.product-slideshow .dot {
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.952);
+}
+
+.product-slideshow .product-title {
+    display: block;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 20px;
+    font-size: 30pt;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.692);
+    color: rgba(255, 255, 255, 0.911);    
+}
+
+.product-slideshow .product-text {
+    display: block;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: -10px;
+    font-size: 12pt;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.692);
+    color: rgba(255, 255, 255, 0.911);    
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Webcam Image Handler</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        const size = {
+            width: 100,
+            height: 40
+        }
+
+        //const chars = '!^()-+[]\';:|qwertyuiopasdfghjklzxcvbnm01234' + '@#$%&*="\\></QWERTYUIOPASDFGHJKLZXCVBNM56789';
+	const chars = '01';
+        function map(value, in_min, in_max, out_min, out_max) {
+            return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+        }
+
+        const video = (() => {
+            const video = document.createElement('video');
+            video.width = size.width;
+            video.height = size.height;
+            return video;
+        })();
+
+        const ctx = (() => {
+            const canvas = document.createElement('canvas');
+            canvas.width = size.width;
+            canvas.height = size.height;
+            return canvas.getContext('2d');
+        })();
+
+        navigator.getUserMedia({
+            video: true,
+            audio: false
+        }, stream => {
+            video.srcObject = stream;
+            video.onloadeddata = () => video.play();
+            const loop = () => {
+                ctx.drawImage(video, 0, 0, size.width, size.height);
+                const image_data = ctx.getImageData(0, 0, size.width, size.height);
+                process.stdout.clearLine();
+                process.stdout.cursorTo(0, 0);
+                let j = 1;
+                for(let i = 0; i < image_data.data.length; i += 4) {
+                    const pixel = (
+                        image_data.data[i] +
+                        image_data.data[i + 1] +
+                        image_data.data[i + 2] +
+                        255
+                    )/4;    
+                    
+                    const index = Math.floor(map(pixel, 0, 255, 0, chars.length));
+                    process.stdout.write(chars.charAt(index));
+                    // process.stdout.write(Math.floor(Math.random()*9).toString());
+
+                    if(j%size.width == 0)
+                        process.stdout.write('\n');
+                    j++;
+                }
+                window.requestAnimationFrame(loop);
+            }
+            loop();
+        }, () => console.error);
+
+    </script>
+</body>
+</html>

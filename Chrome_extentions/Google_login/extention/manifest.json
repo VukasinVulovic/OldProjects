@@ -1,0 +1,22 @@
+ {
+  "manifest_version": 2,
+  "name": "GOOGLE-protected",
+  "version": "621",
+  "icons": { 
+    "16": "bin/icon.png"
+  },
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+  "options_page": "bin/options/index.html",
+  "web_accessible_resources": ["bin/index.html"],
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["bin/content.js"]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<center>
+Background: <input id = "BgColor" style = "border: none; background: none;" type = "color" value = "#de5100" onchange = "Start()"></input>
+<br>
+Height: <input id = "Fsize" type = "number" value = "100" onchange = "Start()"></input>
+<br>
+Width: <input id = "Bsize" type = "number" value = "200" onchange = "Start()"></input>
+<br>
+border-radius: <input id = "Brad" type = "number" value = "30" onchange = "Start()"></input>
+<br>
+border: <input type = "checkbox" id = "Board" checked = "true" onchange = "Start()"></input>
+<br>
+box-shadow1: <input type = "number" id = "Boxs1" value = "4" onchange = "Start()"></input>
+<br>
+box-shadow2: <input type = "number" id = "Boxs2" value = "4" onchange = "Start()"></input>
+<br>
+box-shadow3: <input type = "number" id = "Boxs3" value = "4" onchange = "Start()"></input>
+<br>
+box-shadow color: <input id = "BoxC" type = "color" style = "border: none; background: none;" value = "#696996" onchange = "Start()"></input>
+<br>
+<hr></hr>
+<br>
+Text color: <input type = "color" id = "Tcolo" value = "4" style = "border: none; background: none;" onchange = "Start()"></input>
+<br>
+<br>
+Font-size: <input type = "number" id = "Fsz" value = "20" onchange = "Start()"></input>
+<br>
+Font-shadow1: <input type = "number" id = "Fonts1" value = "4" onchange = "Start()"></input>
+<br>
+Font-shadow2: <input type = "number" id = "Fonts2" value = "4" onchange = "Start()"></input>
+<br>
+Font-shadow3: <input type = "number" id = "Fonts3" value = "4" onchange = "Start()"></input>
+<br>
+Font-shadow color: <input id = "Fon" type = "color" style = "border: none; background: none;" value = "#696996" onchange = "Start()"></input>
+<br>
+<br>
+Text decoration: <select id = "Weight" onchange = "Start()">
+<option value = "bold">BOLD</option>
+<option value = "normal">NORMAL</option>
+</select>
+<br>
+<br>
+italic: <input type = "checkbox" id = "Ital" onchange = "Start()"></input>
+<br>
+<br>
+<button onclick = "Start()" id = "Button">GENERATE</button>
+<br>
+<br>
+Text: <input id = "Text" type = "text" value = "BUTTON" onchange = "Start()"></input>
+<br>
+<br>
+<p id = "Disp"></p>
+</center>
+<script>
+let code = "";
+
+ function Start() {
+
+   	let t = document.getElementById("Text").value;
+	  document.getElementById("Button").innerHTML = t;
+    let color = document.getElementById("BgColor").value;
+	  let deco = document.getElementById("Weight").value;
+  	let italics = document.getElementById("Ital");
+    let tcolor = document.getElementById("Tcolo").value;
+    let shadc = document.getElementById("Fon").value;
+    let f1 = document.getElementById("Fonts1").value;
+    let f2 = document.getElementById("Fonts2").value;
+    let f3 = document.getElementById("Fonts3").value;
+    let fonts = document.getElementById("Fsz").value;
+	  let h = document.getElementById("Fsize").value;
+	  let w = document.getElementById("Bsize").value;
+	  let br = document.getElementById("Brad").value;
+    let bc = document.getElementById("BoxC").value;
+	  let bs1 = document.getElementById("Boxs1").value;
+	  let bs2 = document.getElementById("Boxs2").value;
+  	let bs3 = document.getElementById("Boxs3").value;
+  	let border = document.getElementById("Board");
+	  let shadow = document.getElementById("Shad");
+  	let display = document.getElementById("Disp");
+  	let button = document.getElementById("Button");
+	  let it = "";
+ 	  if( italics.checked == true ) { it = "italic"; } else { it = "normal"; }
+ 	  code = ".element {" + "color: " + tcolor + ";" + "font-style: " + it + ";" + "text-shadow: " + f1 + "px " + f2 + "px " + f3 + "px " + shadc + ";" + "font-weight: " + deco + ";" + "text-align: center;" + "font-size: " + fonts + "px;" + "background-color: " + color + ";" + "border-radius: " + br + "px;" + "box-shadow: " + bs1 + "px" + " " + bs2 + "px" + bs3 + "px"+ bc + ";" + "height: " + h + "px;" + "width: " + w + "px;";
+    if( border.checked == false ) { code = code + "border: none;" + "} <br>" + ".element:before{" + "content: '" + t + "';}"; button.style.border = "none"; } else { code = code + "} <br>" + ".element:before{" + "content: '" + t + "';" + "}"; }
+  	button.style.boxShadow = bs1 + "px " + bs2 + "px " + bs3 + "px" + bc;
+  	button.style.backgroundColor = color;
+  	button.style.borderRadius = br + "px";
+   	button.style.height = h + "px";
+  	button.style.width = w + "px";
+  	button.style.color = tcolor;
+  	button.style.textAling = "center";
+  	button.style.textShadow = f1 + "px " + f2 + "px " + f3 + "px " + shadc;
+  	button.style.fontWeight = deco;
+  	button.style.fontStyle = it;
+  	button.style.fontSize = fonts + "px";
+  	display.innerHTML = code;
+    setTimeout(Start, 100);
+}
+</script>
+</body>
+</html>

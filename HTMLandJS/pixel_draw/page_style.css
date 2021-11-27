@@ -1,0 +1,13 @@
+ html,head,body {
+
+    /* cursor: none; */
+    overflow: hidden;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: rgb(2,0,36);
+    background: linear-gradient(198deg, rgba(2,0,36,1) 0%, rgba(252,0,255,1) 0%, rgba(0,188,226,1) 100%);
+}

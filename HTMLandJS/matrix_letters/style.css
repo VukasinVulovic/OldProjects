@@ -1,0 +1,23 @@
+* {
+    background-color: black;
+    overflow: hidden;
+}
+
+.chars {
+    color: rgb(7, 200, 1);
+    padding-top: 0;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    -webkit-text-stroke: 1px black;
+}
+
+.last-char {
+    color: rgb(206, 206, 206);
+    font-stretch: expanded;
+    padding-top: 0;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    -webkit-text-stroke: 0.1px black;
+}

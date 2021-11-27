@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+Div{
+width:20px;
+height:20px;
+}
+</style>
+<center><img  width="50px" height="50px" src="wood_tree.png" onclick="Wtree()"></img><img  width="50px" height="50px" src="wood.png" onclick="WooD()"></img><img  width="50px" height="50px" src="stone.png" onclick="Stone()"></img><img  width="50px" height="50px" src="stairs_left.png" onclick="StairsL()"></img><img  width="50px" height="50px" src="stairs_right.png" onclick="StairsR()"></img><img  width="70px" height="70px" src="glass.png" onclick="Glass()"></img><img  width="50px" height="100px" src="door_left.png" onclick="DoorL()"></img><img  width="50px" height="100px" src="door_right.png" onclick="DoorR()"></img></center>
+<p onclick="Inf()"><i><font color="red"></p></font></i><center><div class="Div"><h1><p id="Item">64</p></h1></div></center>
+<audio id="Plop"><source src="plop.mp3" type="audio/mpeg"></source></audio>
+</head>
+<body onload="Start()">
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood1"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood2"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood3"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood4"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood5"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood6"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood7"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood8"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood9"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood10"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood11"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood12"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood13"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood14"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood15"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood16"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood17"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood18"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood19"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood20"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood21"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood22"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood23"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood24"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood25"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood26"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood27"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood28"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood29"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood30"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood31"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood32"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood33"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood34"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood35"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood36"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood37"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood38"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood39"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood40"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood41"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood42"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood43"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood44"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood45"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood46"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood47"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood48"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood49"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood50"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood51"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood52"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood53"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood54"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood55"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood56"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood57"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood58"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood59"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood60"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood61"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood62"></img> 
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood63"></img>
+<img style="position: absolute; display:none;" width="100px" height="100px" id="Wood64"></img>
+<img style="position: absolute;" width="100px" height="100px" id="Sprite1"></img>
+<script>
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+var y=100;
+var x=900;
+var pos=0;
+var Inum=64;
+var speed=0;
+var Ihei=100;
+var Iwid=100;
+var u=0;
+var r=0;
+var blockId="wood.png";
+var pp=document.getElementById("Plop");
+function Start(){
+document.getElementById("Sprite1").width=Iwid;
+document.getElementById("Sprite1").height=Ihei;
+document.getElementById("Sprite1").style.transform='rotate(' + r + 'deg)'
+document.getElementById("Sprite1").src=blockId;
+document.getElementById("Sprite1").style.bottom=y+"px";
+document.getElementById("Sprite1").style.right=x+"px";
+  if(speed>18){
+speed=18;
+  }
+  if(Inum<1){
+document.getElementById("Sprite1").style.display="none";
+  }
+  setTimeout(Start,10);
+}
+function keyDownHandler(e) {
+  if(e.keyCode == 222) { 
+r++;
+ }
+  if(e.keyCode == 186) { 
+r--;
+ }
+  if(e.keyCode == 188) { 
+Iwid++;
+ }
+  if(e.keyCode == 190) { 
+Iwid--;
+ }
+  if(e.keyCode == 48) { 
+Ihei++;
+ }
+  if(e.keyCode == 57) { 
+Ihei--;
+ }
+  if(e.keyCode == 32) { 
+pos++;
+   if(Inum<1){
+alert("You used up all your items!"); 
+   }
+   if(Inum>0){
+pp.play();
+Inum--;
+document.getElementById("Item").innerHTML=Inum;
+document.getElementById("Wood" + pos).style.transform='rotate(' + r + 'deg)';
+document.getElementById("Wood" + pos).style.display="block";
+document.getElementById("Wood" + pos).src=blockId;
+document.getElementById("Wood" + pos).style.right=x+"px";
+document.getElementById("Wood" + pos).style.bottom=y+"px"; 
+document.getElementById("Wood" + pos).width=Iwid; 
+document.getElementById("Wood" + pos).height=Ihei;
+    }
+  }
+ if(e.keyCode == 49) {
+Wtree();
+ }
+ if(e.keyCode == 50) {
+WooD(); 
+ }
+ if(e.keyCode == 51) {
+Stone();
+ }
+ if(e.keyCode == 52) {
+StairsL();
+ }
+ if(e.keyCode == 53) {
+StairsR(); 
+ }
+ if(e.keyCode == 54) {
+Glass();
+ }
+ if(e.keyCode == 55) {
+DoorL();
+ }
+ if(e.keyCode == 56) {
+DoorR();
+ }
+ if(e.keyCode == 38) {
+   if(y<828){
+y++;
+speed++;
+y=y+speed;
+  }
+}
+ if(e.keyCode == 40) {
+   if(y>4){
+y--;
+speed++;
+y=y-speed;
+  }
+}
+ if(e.keyCode == 37) {
+   if(x<1765){
+x++;
+speed++;
+x=x+speed;
+  }
+}
+ if(e.keyCode == 39) {
+   if(x>20){
+x--;
+speed++;
+x=x-speed;
+  } 
+ }
+}
+function keyUpHandler(e) {
+   if(e.keyCode == 38) {
+speed=0;
+    }
+   if(e.keyCode == 40) {
+speed=0;
+    }
+   if(e.keyCode == 37) {
+speed=0;
+    }
+   if(e.keyCode == 39) {
+speed=0;
+    }
+}
+function StairsL(){blockId='stairs_left.png';Iwid=100;Ihei=100;}
+function StairsR(){blockId='stairs_right.png';Iwid=100;Ihei=100;}
+function Wtree(){blockId='wood_tree.png';Iwid=100;Ihei=100;}
+function WooD(){blockId='wood.png';Iwid=100;Ihei=100;}
+function Stone(){blockId='stone.png';Iwid=100;Ihei=100;}
+function Glass(){blockId='glass.png';Iwid=100;Ihei=100;}
+function DoorL(){blockId='door_left.png';Iwid=100;Ihei=100;}
+function DoorR(){blockId='door_right.png';Iwid=100;Ihei=100;}
+function Inf(){u++;if(u>1){u=0;}if(u==0){document.getElementById("Info").style.display="none";}if(u==1){document.getElementById("Info").style.display="block";}}
+</script>
+<div align="right"><a href="https://bokeainsrb.ga"><img height="30" width="30" src="myLogo.png"></img></a></div>
+</br>
+<center>
+<p id="Info" style="display:none">
+Use arrows on your keyboard to move the block around the page, and <i><b>SPACE</b></i> to place it.
+</br>
+To change <b>width</b> of the block use <i>< ></i> .
+</br>
+To change <b>height</b> of the block use <i>+-</i> on your Numpad. 
+</p>
+</center>
+</body>
+</html>

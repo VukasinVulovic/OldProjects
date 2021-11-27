@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script src="bin/libraries/jQuery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA1Y27cQWZ4og4QkX6iLAIyREdp_ciY8eQ",
+    authDomain: "database-b2bc2.firebaseapp.com",
+    databaseURL: "https://database-b2bc2.firebaseio.com",
+    projectId: "database-b2bc2",
+    storageBucket: "database-b2bc2.appspot.com",
+    messagingSenderId: "718257521499",
+    appId: "1:718257521499:web:a0fb5403627dc3b99c107e",
+    measurementId: "G-QK6XMG3XGK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script type="text/javascript">
+      $.get('https://www.reddit.com/r/Jokes/.json', function (data) {
+
+        console.log(data);
+      });
+
+      // $.post('https://api.jsonbin.io/b/5dbc8f860448cf5e89353b53', {
+      //   $.setRequestHeader('secret-key', '5dbc8f860448cf5e89353b53	');
+      //   x: "aaaaaaaaaaaaaaa",
+      //   y: "aaaaaaaaaaaaaaa",
+      //   colors: "aaaaaaaaaaaaaaa"
+      //  });
+    </script>
+  </body>
+</html>

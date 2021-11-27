@@ -1,0 +1,114 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    display: block; 
+    padding-left: 20px;
+}
+
+.wrapper {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+}
+
+.register {
+    text-decoration: none;
+}
+
+.sign-in-icon {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 20px;
+    position: absolute;
+}
+
+.sign-in {
+    font-size: 12pt;
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+
+.upload {
+    text-decoration: none;
+}
+
+.upload-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    align-items: right;
+}
+
+.upload-c {
+    font-size: 12pt;
+    color: rgb(0, 0, 0); 
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+
+.title {
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.title-reversed {
+    transform: rotateX(180deg);
+    margin-top: -48pt;
+    opacity: 0.1;
+    filter: blur(2px);
+}
+
+.send_button {
+    width: 200px;
+    height: 50px;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border-style: solid;
+    font-size: 24pt;
+    background: none;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.send_button:hover {
+    box-shadow: rgb(0, 0, 0) 0 1px 3px;
+}
+
+.send_button:active {
+    box-shadow: rgb(0, 0, 0) 0 2px 5px;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.uuid_input, .title_input, .email_input {
+    width: 80%;
+    display: block;
+    margin: auto;   
+}
+
+.html_input {
+    width: 80%;
+    display: block;
+    margin: auto;
+}

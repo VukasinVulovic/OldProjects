@@ -1,0 +1,7 @@
+color red
+printf This_is_red
+color lime
+printf This_is_green
+color blue
+printf This_is_blue
+color white

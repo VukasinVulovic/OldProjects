@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt</title>
+    <style>
+        #canvas, #canvas2 {
+            display: block; 
+            margin: auto;
+        }
+
+        #image {
+            display: block;
+            margin: auto;
+        }
+
+        .label {
+            display: block;
+            text-align: center;
+        }
+
+        #output {
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <label for="image" class="label">Image: </label>
+    <input type="file" id="image" name="image">
+    <br>
+    <p id="output"></p>
+    <canvas id="canvas" width="300" height="400"></canvas>
+    <script defer src="./main.js"></script>
+</body>
+</html>

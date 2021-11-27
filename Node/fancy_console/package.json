@@ -1,0 +1,15 @@
+{
+  "name": "fancy_console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-aplay": "^1.0.3"
+  }
+}

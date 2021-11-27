@@ -1,0 +1,12 @@
+ body {
+
+    background-color: #000000;
+}
+ .send_btn {
+
+    display: block;
+    margin: auto;
+	width: 400px;
+	height: 100px;
+	font-size: 90px;
+}

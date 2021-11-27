@@ -1,0 +1,111 @@
+* {
+    font-family: 'Open Sans';
+}
+
+.wrapper {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    border: 1px solid rgb(192, 192, 192);
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+}
+
+.logo {
+    font-size: 30px;
+    padding: 0;
+    margin: auto;
+    display: block;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.sign-in-title {
+    font-size: 30px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.746);
+    margin-top: 20px;
+}
+
+.sign-in-info1 {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    /* padding-top: 10px; */
+}
+
+.sign-in-info2 {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    /* padding-top: 10px; */
+    margin-top: 30px;
+    color: rgb(63, 63, 63);
+}
+
+.sign-in-box {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.sign-in-box-label {
+    display: block;
+    text-align: left;
+    margin-top: -12px;
+    width: 134px;
+    /* height: 21px; */
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(58, 58, 58);
+    z-index: 3000;
+    position: relative;
+}
+
+.sign-in-box-input {
+    width: 99%;
+    height: 100%;
+    display: block;
+    background: none;
+    /* outline: inset; */
+    outline-color: rgb(82, 81, 81);
+    outline-width: 1px;
+    border: none;
+    margin: auto;
+    margin-top: -12px;
+    font-size: 20px;
+}
+
+.sign-in-button {
+    background: linear-gradient(to right, #fa1358, #ff3511);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+}
+
+.sign-in-button-text {
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .email-input {
+    width: 80%;
+    height: 200px;
+    font-size: 70px;
+    display: block;
+    margin: auto;
+} */

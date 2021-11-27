@@ -1,0 +1,28 @@
+ .translate_button {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+ #In {
+
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+ #Out {
+
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}

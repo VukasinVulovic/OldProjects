@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p onclick="Inf()"><i><font color="#00307f">---HELP---</font></i></p>
+<center><img  width="50px" height="50px" src="wood_tree.png" onclick="Wtree()"></img><img  width="50px" height="50px" src="wood.png" onclick="WooD()"></img><img  width="50px" height="50px" src="stone.png" onclick="Stone()"></img><img  width="50px" height="50px" src="stairs_left.png" onclick="StairsL()"></img><img  width="50px" height="50px" src="stairs_right.png" onclick="StairsR()"></img><img  width="70px" height="70px" src="glass.png" onclick="Glass()"></img><img  width="50px" height="100px" src="door_left.png" onclick="DoorL()"></img><img  width="50px" height="100px" src="door_right.png" onclick="DoorR()"></img></center>
+<audio id="Plop"><source src="plop.mp3" type="audio/mpeg"></source></audio>
+</head>
+<body onload="Start()">
+<img style="position: absolute;" width="100px" height="100px" id="Sprite1"></img>
+<script>
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+var y = 100; //move up-down
+var x = 900; //move left-right
+var speed = 0; //move speed
+var Ihei = 100; //height
+var Iwid = 100; //width
+var u = 0; //information show-hide
+var r = 0; //rotate
+var blockId = "wood.png"; //block type
+var pp = document.getElementById("Plop"); //place block audio
+function keyDownHandler(e) {
+
+if(e.keyCode == 222){r++;}
+if(e.keyCode == 186){r--;}
+if(e.keyCode == 188){Iwid++;}
+if(e.keyCode == 190){Iwid--;}
+if(e.keyCode == 109){Ihei++;}
+if(e.keyCode == 107){Ihei--;}
+
+if(e.keyCode == 32){ 
+  pp.play();
+  var img = document.createElement("IMG");
+  img.setAttribute("width", Iwid);
+  img.setAttribute("height", Ihei);
+  img.style.transform = 'rotate(' + r + 'deg)';
+  img.src = blockId;
+  img.style.bottom = y+"px";
+  img.style.right = x+"px";
+  img.style.position = "absolute";
+  document.body.appendChild(img);
+}
+
+if(e.keyCode == 49){Wtree();}
+if(e.keyCode == 50){WooD(); }
+if(e.keyCode == 51){Stone();}
+if(e.keyCode == 52){StairsL();}
+if(e.keyCode == 53){StairsR();}
+if(e.keyCode == 54){Glass();}
+if(e.keyCode == 55){DoorL();}
+if(e.keyCode == 56){DoorR();}
+
+if(e.keyCode == 38){
+   if(y<828){
+y++;
+speed++;
+y = y+speed;
+  }
+}
+
+if(e.keyCode == 40){
+   if(y>4){
+y--;
+speed++;
+y = y-speed;
+  }
+}
+
+if(e.keyCode == 37) {
+  if(x<1765){
+x++;
+speed++;
+x = x+speed;
+  }
+}
+if(e.keyCode == 39) {
+  if(x>20){
+x--;
+speed++;
+x = x-speed;
+  } 
+ }
+}
+
+function keyUpHandler(e) {
+   if(e.keyCode == 38 || e.keyCode == 40 || e.keyCode == 37 || e.keyCode == 39){
+speed = 0;
+ }
+}
+
+function Start(){
+document.getElementById("Sprite1").width = Iwid;
+document.getElementById("Sprite1").height = Ihei;
+document.getElementById("Sprite1").style.transform = 'rotate(' + r + 'deg)'
+document.getElementById("Sprite1").src = blockId;
+document.getElementById("Sprite1").style.bottom = y+"px";
+document.getElementById("Sprite1").style.right = x+"px";
+setTimeout(Start,10);
+}
+function StairsL(){blockId = 'stairs_left.png';Iwid = 100;Ihei = 100;}
+function StairsR(){blockId='stairs_right.png';Iwid = 100;Ihei = 100;}
+function Wtree(){blockId='wood_tree.png';Iwid = 100;Ihei = 100;}
+function WooD(){blockId='wood.png';Iwid = 100;Ihei = 100;}
+function Stone(){blockId='stone.png';Iwid = 100;Ihei = 100;}
+function Glass(){blockId='glass.png';Iwid = 100;Ihei = 100;}
+function DoorL(){blockId='door_left.png';Iwid = 100;Ihei = 100;}
+function DoorR(){blockId='door_right.png';Iwid = 100;Ihei = 100;}
+function Inf(){u++;if(u > 1){u = 0;}if(u == 0){document.getElementById("Info").style.display = "none";}if(u == 1){document.getElementById("Info").style.display = "block";}}
+</script>
+<div align="right" style="position:absolute;bottom:50px;right:0;"><a href="https://bokeainsrb.ga"><img height="30" width="30" src="myLogo.png"></img></a></div>
+</br>
+<center>
+<p id="Info" style="display:none">
+Use arrows on your keyboard to move the block around the page, and <i><b>SPACE</b></i> to place it.
+</br>
+To change <b>the width</b> of the block use <i>< ></i> .
+</br>
+To change <b>the height</b> of the block use <i>+-</i> on your Numpad. 
+</br>
+To rotate <b>the block</b> of the block use :" on your Numpad. 
+</p>
+<p style="position:absolute;bottom:0;right:0;"></br><b>V: 1.0.2</b></br><i>24.4.2019.</i></p>
+</center>
+</body>
+</html>

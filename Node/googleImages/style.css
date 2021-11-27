@@ -1,0 +1,14 @@
+.slideshow_wrapper {
+    margin: auto;
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+}
+
+.slideshow_image {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: block;
+}

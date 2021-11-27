@@ -1,0 +1,1 @@
+#Clip is from the internet, unknown author

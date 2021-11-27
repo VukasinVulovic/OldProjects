@@ -1,0 +1,10 @@
+ body {
+	background-color: black;
+	overflow: hidden;
+}
+ 
+ #image {
+    width: 200px;
+    height: 160px;
+	position: absolute;
+}

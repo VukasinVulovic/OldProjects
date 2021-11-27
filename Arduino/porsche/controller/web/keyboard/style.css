@@ -1,0 +1,40 @@
+.steer {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    outline: none;
+}
+
+.steer::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 80px;
+    background: #dbdbdb;
+}
+
+.steer::-webkit-slider-thumb {
+    height: 80px;
+    width: 80px;
+    background: #000000;
+    -webkit-appearance: none;
+}
+
+.power {
+    -webkit-appearance: none;
+    width: 100%;
+    outline: none;
+    transform: rotate(270deg);
+    margin-top: 300px;
+}
+
+.power::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 200px;
+    background: #dbdbdb;
+}
+
+.power::-webkit-slider-thumb {
+    height: 100%;
+    width: 10px;
+    background: #000000;
+    -webkit-appearance: none;
+}

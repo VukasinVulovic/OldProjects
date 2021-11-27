@@ -1,0 +1,1 @@
+#Images removed because of copyright material.

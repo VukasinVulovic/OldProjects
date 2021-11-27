@@ -1,0 +1,88 @@
+.gui-wrapper {
+    margin: auto;
+    display: block;
+
+}
+
+#throw_die {
+    color: #f8dc06;
+    font-style: normal;
+    text-shadow: 3px 2px 2px #000000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 73px;
+    background-image: url('./bin/src/images/UI/go_button.jpg');
+    background-color: #f20000;
+    border-radius: 18px;
+    box-shadow: -1px -4px 0px#ff0000;
+    height: 100px;
+    width: 200px;
+    border: none;
+    outline: 0;
+    /* display: none; */
+    margin: auto;
+    display: block;
+}
+
+#throw_die:before {
+    content: '☭';
+}
+
+#throw_die:active {
+    box-shadow: 1px 4px 2px#da0000;
+    text-shadow: 4px 4px 2px #000000;
+}
+
+#buy_prop {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(14, 14, 14);
+    font-size: 20px;
+    background-color: #de5100;
+    background-image: url('./bin/src/images/UI/buy_button.png');
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px #d2d2d2;
+    height: 110px;
+    width: 190px;
+    border: none;
+    outline: 0;
+    display: none;
+    margin: auto;
+    display: block;
+}
+
+#buy_prop:before {
+    content: 'BUY BLYAT';
+}
+
+#buy_prop:active {
+    box-shadow: 1px 4px 2px#bdbdbd;
+    text-shadow: 4px 4px 2px #000000;
+}
+
+#message {
+    font-size: 45pt;
+    color: black;
+}
+
+#balance, #price, #owner {
+    display: block;
+    padding-right: 100px;
+    text-align: right;
+    font-size: 24pt;
+    color: #000000;
+}
+
+#board {
+    /* background-image: url('./bin/src/images/UI/board_background.png'); */
+    background-color: #f20000;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+

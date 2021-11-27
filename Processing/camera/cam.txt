@@ -1,0 +1,10 @@
+import processing.video.*;
+Capture cam;
+setup-----------------
+cam = new Capture(this, 640, 480, 30);
+cam.start();
+loop-----------------
+if(cam.available()) {
+  cam.read();
+}
+  image(cam, 0, 0);

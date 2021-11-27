@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <div class="card">
+        <span class="card-title">Upload a file to cloud</span>
+        <form action="/uploader" method="post" action="/view-files" enctype="multipart/form-data" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=1000, height=800');" class="upload-form">
+            <a class="card-text">Your UUID </a>
+            <input type="text" name="uuid" placeholder="uuid" class="uuid-input">
+            <input type="file" name="file" class="file-input">
+            <button type="submit" class="upload-button">upload to cloud</button>
+        </form>
+    </div>
+    <div class="card">
+        <span class="card-title">List files on cloud</span>
+        <form action="/view-files" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=1000, height=800');" class="list-form">
+            <a class="card-text">Your UUID </a>
+            <input type="text" name="uuid" placeholder="uuid" class="uuid-input">
+            <button type="submit" class="upload-button" style="margin-top: 4.7em;">Show a list of files</button>
+        </form>    
+    </div>
+</body>
+</html>

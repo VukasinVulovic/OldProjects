@@ -1,0 +1,5 @@
+{
+    "port": 30,
+    "serial_port": "COM5",
+    "rate": 9600
+}

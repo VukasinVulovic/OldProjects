@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt</title>
+    <style>
+        #canvas {
+            display: block; 
+            margin: auto;
+        }
+
+        .text-input {
+            display: block;
+            margin: auto;
+            width: 400px;
+            height: 200px;
+            outline: none;    
+        }
+
+        #image {
+            display: block;
+            margin: auto;
+        }
+
+        .label {
+            display: block;
+            text-align: center;
+        }
+
+        .left {
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="text" placeholder="Enter your text here" class="text-input"></textarea>
+    <span class="left"></span>
+    <br>
+    <label for="image" class="label">Image: </label>
+    <input type="file" id="image" name="image">
+    <canvas id="canvas" width="300" height="400"></canvas>
+    <script defer src="./main.js"></script>
+</body>
+</html>

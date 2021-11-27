@@ -1,0 +1,83 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    box-shadow: 2px 2px 3px rgb(185, 185, 185);
+    display: block;
+    margin: auto;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 3px rgb(88, 88, 88);
+    width: 402px;
+    height: 302px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 24pt;
+    display: block;
+    margin-top: 1em;
+}
+
+.card-text {
+    font-size: 14pt;
+    text-align: left;
+    color: rgb(0, 0, 0);  
+}
+
+.uuid-input {
+    display: block;
+    margin-left: 100px;
+    margin-top: 1em;
+}
+
+.file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.file-input::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f574";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 40pt;
+}
+
+.file-input {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: none;
+    font-size: 22pt;
+    margin-top: 1em;
+    height: 50px;
+    width: 50px;
+    outline: none;
+}
+
+.upload-button {
+    width: 80%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: none;
+    outline: 4px solid black;
+    border: black;
+    font-size: 22pt;
+    margin-top: 2em;
+}
+
+.upload-form, .list-form {
+    margin-top: 10px;
+}
