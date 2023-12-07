@@ -9,7 +9,7 @@
   "author": "Vukasin Vulovic",
   "license": "ISC",
   "dependencies": {
-    "androidjs": "^2.0.4",
+    "androidjs": "^2.0.6",
     "fs": "0.0.1-security",
     "fs-extra": "^9.0.1",
     "prompt": "^1.0.0"
